@@ -9,7 +9,7 @@
 
 ```
 <div id="qexot"></div>
-<script src="https://gcore.jsdelivr.net/gh/0fuling0/qexo-talks-for-hexo-theme-volantis@main/talk.js"></script>
+<script src="https://gcore.jsdelivr.net/gh/0fuling0/qexo-talks-for-hexo-theme-volantis@main/talks.js"></script>
 <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/0fuling0/qexo-talks-for-hexo-theme-volantis@main/talks.css">
 <script>showQexoTalks("qexot", "${SITE}", 5)</script>
 ```
@@ -30,7 +30,7 @@
 <pjax>
     <div>
 	<div id="qexot"></div>
-	<script src="https://gcore.jsdelivr.net/gh/0fuling0/qexo-talks-for-hexo-theme-volantis@main/talk.js"></script>
+	<script src="https://gcore.jsdelivr.net/gh/0fuling0/qexo-talks-for-hexo-theme-volantis@main/talks.js"></script>
         <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/0fuling0/qexo-talks-for-hexo-theme-volantis@main/talks.css">
 	<script>showQexoTalks("qexot", "${SITE}", 5)</script>
     </div>
