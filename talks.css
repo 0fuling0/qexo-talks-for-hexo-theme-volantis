@@ -1,0 +1,232 @@
+/* 公共样式 */
+.qexo_inner, .qexo_loader {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.qexo_loader {
+  background-color: rgba(144, 147, 153, 0.1);
+  width: 64px;
+  height: 64px;
+  perspective: 800px;
+}
+
+.qexo_inner {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.qexo_part {
+  margin-top: 20px;
+  min-height: 100px;
+}
+
+.qexo_loading {
+  margin-bottom: 20px;
+}
+
+/* 动画样式 */
+.qexo_inner.one {
+  left: 0;
+  top: 0;
+  animation: rotate-one 1.6s ease-in-out infinite;
+  border-bottom: 4px solid rgba(144, 147, 153, 0.8);
+}
+
+.qexo_inner.two {
+  right: 0;
+  top: 0;
+  animation: rotate-two 1.6s ease-in-out infinite;
+  border-right: 4px solid rgba(144, 147, 153, 0.6);
+}
+
+.qexo_inner.three {
+  right: 0;
+  bottom: 0;
+  animation: rotate-three 1.6s ease-in-out infinite;
+  border-top: 4px solid rgba(144, 147, 153, 0.4);
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+动态布局
+#qexot > section > div > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+  margin-top: 8px;
+}
+
+#qexot > section > div > div { 
+/*   border: 1px solid #ddd; 普通模式的边框颜色 */
+  border-radius: 4px;
+  background: var(--color-block);
+}
+
+[color-scheme='dark'] #qexot > section > div > div {
+/*   border: 1px solid #333; /* 黑夜模式的边框颜色 */ */
+}
+
+#qexot p {
+  margin: 0;
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+
+#qexot .datafrom i {
+  margin-right: 4px;
+}
+
+/* 时间与标签 */
+.qexot-datatime {
+  order: 1;
+  font-size: 0.875rem;
+  display: inline;
+}
+
+.qexot-tags {
+  font-size: 0.875rem;
+}
+
+
+/* 将时间和标签放在一行 */
+.qexot-datetime-tags-container {
+  display: flex;
+  align-items: center;
+}
+
+/* 内容布局 */
+.datacont {
+  order: 0;
+  line-height: 1.38;
+}
+
+#qexot .qexot-like {
+  cursor: pointer !important;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px; /* 修改圆角 */
+/*   background-color: rgba(0, 0, 0, 0.05); */
+  transition: background-color 0.2s ease;
+}
+
+#qexot .qexot-like:hover {
+  background-color: rgba(0, 0, 0, 0.1) ;
+  color: red !important;
+}
+
+
+.qexot-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+}
+
+/* 动态内容项 - 修改为整体样式 */
+.qexot-item {
+  padding: 1rem;
+  margin: 12px 0;
+}
+
+/* 去掉浮动效果 */
+.qexot-item:hover {
+  transform: none;
+}
+
+/* 每个item的内容布局 */
+.qexot-item-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+
+.qexot-item-content p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* 时间与标签调整 */
+.qexot-datetime-tags-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.qexot-datatime, .qexot-tags {
+  font-size: 0.875rem;
+  color: var(--color-meta);
+}
+
+/* 更多按钮 */
+.qexot-more {
+  background-color: #f3f4f6;
+  color: var(--color-meta);
+  border-radius: 4px; /* 修改圆角 */
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.qexot-more:hover {
+  background-color: #e1e2e6;
+}
+
+.qexot-count-info {
+  padding: 0.5rem 0 0 4px;
+}
+
+div.gallery {
+    justify-content: flex-start;
+    margin: 0;
+}
+
+#qexot > section > div > div:nth-child(1) > div.qexot-content > div > div > div {
+    max-height: 60vh;
+    width: 100%;
+}
+
+.fancybox img {
+    border-radius: 4px;	
+}
+
+#qexot > section > div > div > div.qexot-top > span > span {
+    margin-right: 8px;	
+}
