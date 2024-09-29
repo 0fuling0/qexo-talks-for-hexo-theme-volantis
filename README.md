@@ -1,7 +1,7 @@
 # qexo-talks-for-hexo-theme-volantis
 
 [Qexo](https://github.com/Qexo/Qexo)说说功能，适配[hexo-theme-volantis](https://github.com/volantis-x/hexo-theme-volantis)静态文件。
-适配了fancybox图片灯箱，点赞通知，样式等。
+适配了fancybox图片灯箱，点赞通知，样式，pjax，侧边栏小组件等。
 
 ## 引入方法
 
