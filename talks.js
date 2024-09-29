@@ -1,6 +1,11 @@
 var qexo_talks = [];
 var talk_page = 1;
 
+document.addEventListener("DOMContentLoaded", function() {
+  VolantisFancyBox.init(false, () => {
+  });
+});
+
 function qexoFormatTime(format = "YYYY-mm-dd HH:MM:SS", num = Date.now()) {
   const date = num.toString().length === 10 ? new Date(num * 1000) : new Date(num);
   const opt = {
@@ -262,7 +267,4 @@ function updateQexoTalks(url, domid, limit) {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  VolantisFancyBox.init(false, () => {
-  });
-});
+
